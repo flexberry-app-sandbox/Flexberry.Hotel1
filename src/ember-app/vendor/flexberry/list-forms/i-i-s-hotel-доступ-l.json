@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-hotel-доступ-e",
+  "editForm": "i-i-s-hotel-доступ-e",
+  "external": false,
+  "caption": "Доступ",
+  "name": "IISHotelДоступL",
+  "className": "ДоступL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-доступ",
+      "modelProjection": "ДоступL"
+    }
+  ]
+}

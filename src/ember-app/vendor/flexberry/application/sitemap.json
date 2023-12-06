@@ -1,0 +1,64 @@
+﻿{
+  "applicationCaption": "Hotel",
+  "applicationTitle": "Hotel",
+  "items": [
+    {
+      "link": null,
+      "menuName": "hotel",
+      "caption": "Hotel",
+      "title": "Hotel",
+      "children": [
+        {
+          "link": "i-i-s-hotel-комната-l",
+          "menuName": null,
+          "caption": "Комната",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-hotel-сотрудник-l",
+          "menuName": null,
+          "caption": "Сотрудник",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-hotel-должность-l",
+          "menuName": null,
+          "caption": "Должность",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-hotel-доступ-l",
+          "menuName": null,
+          "caption": "Доступ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-hotel-запись-гостя-l",
+          "menuName": null,
+          "caption": "Запись гостя",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-hotel-гости-l",
+          "menuName": null,
+          "caption": "Гости",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-hotel-отель-l",
+          "menuName": null,
+          "caption": "Отель",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

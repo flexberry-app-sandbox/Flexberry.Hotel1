@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Отель",
+  "name": "IISHotelОтельE",
+  "className": "ОтельE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-отель",
+      "modelProjection": "ОтельE"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+﻿{
+  "name": "IISHotelРегистрЗаписи",
+  "modelName": "i-i-s-hotel-регистр-записи",
+  "className": "РегистрЗаписи",
+  "nameSpace": "IIS.Hotel",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаВыезда",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаЗаселения",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "кодРегистра",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "записьГостя",
+      "relatedTo": "i-i-s-hotel-запись-гостя",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "доступ",
+      "relatedTo": "i-i-s-hotel-доступ",
+      "inverse": "регистрЗаписи"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "РегистрЗаписиE",
+      "modelName": "i-i-s-hotel-регистр-записи",
+      "attrs": [
+        {
+          "name": "кодРегистра",
+          "caption": "Код регистра",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаЗаселения",
+          "caption": "Дата заселения",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "датаВыезда",
+          "caption": "Дата выезда",
+          "hidden": false,
+          "index": 7
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

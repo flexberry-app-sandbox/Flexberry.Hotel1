@@ -1,0 +1,177 @@
+﻿{
+  "name": "IISHotelДоступ",
+  "modelName": "i-i-s-hotel-доступ",
+  "className": "Доступ",
+  "nameSpace": "IIS.Hotel",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "доступ",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "кодДоступа",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "комната",
+      "relatedTo": "i-i-s-hotel-комната",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "регистрЗаписи",
+      "relatedTo": "i-i-s-hotel-регистр-записи",
+      "inverse": "доступ"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ДоступE",
+      "modelName": "i-i-s-hotel-доступ",
+      "attrs": [
+        {
+          "name": "кодДоступа",
+          "caption": "Код доступа",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "доступ",
+          "caption": "Доступ",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Класс",
+          "lookupValueField": "класс",
+          "relationName": "Комната",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "класс",
+              "caption": "Класс",
+              "hidden": true,
+              "index": 3
+            },
+            {
+              "name": "кодКомнаты",
+              "caption": "Код комнаты",
+              "hidden": true,
+              "index": 4
+            },
+            {
+              "name": "колвоМест",
+              "caption": "Колво мест",
+              "hidden": true,
+              "index": 5
+            },
+            {
+              "name": "стоимость",
+              "caption": "Стоимость",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Комната",
+          "name": "комната",
+          "relatedTo": "i-i-s-hotel-комната",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "РегистрЗаписиE",
+          "caption": "Регистр записи",
+          "name": "регистрЗаписи",
+          "relatedTo": "i-i-s-hotel-регистр-записи",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ДоступL",
+      "modelName": "i-i-s-hotel-доступ",
+      "attrs": [
+        {
+          "name": "кодДоступа",
+          "caption": "Код доступа",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "доступ",
+          "caption": "Доступ",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Комната",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "класс",
+              "caption": "Класс",
+              "hidden": false,
+              "index": 2
+            },
+            {
+              "name": "кодКомнаты",
+              "caption": "Код комнаты",
+              "hidden": false,
+              "index": 3
+            },
+            {
+              "name": "колвоМест",
+              "caption": "колво мест",
+              "hidden": false,
+              "index": 4
+            },
+            {
+              "name": "стоимость",
+              "caption": "Стоимость",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Класс",
+          "name": "комната",
+          "relatedTo": "i-i-s-hotel-комната",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

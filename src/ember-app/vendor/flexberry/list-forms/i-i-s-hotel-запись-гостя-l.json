@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-hotel-запись-гостя-e",
+  "editForm": "i-i-s-hotel-запись-гостя-e",
+  "external": false,
+  "caption": "Запись гостя",
+  "name": "IISHotelЗаписьГостяL",
+  "className": "ЗаписьГостяL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-hotel-запись-гостя",
+      "modelProjection": "ЗаписьГостяL"
+    }
+  ]
+}
